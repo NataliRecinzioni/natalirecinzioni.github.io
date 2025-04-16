@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Natali Recinzioni</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <main class="flex flex-col items-center justify-start px-4 py-10 space-y-10">
+    <header class="text-center space-y-3">
+      <h1 class="text-5xl font-bold text-green-700">Recinzione</h1>
+      <p class="text-xl font-semibold">di Natali Settimo</p>
+      <p class="text-lg max-w-2xl mx-auto">
+        Recinzioni su misura con muretto in calcestruzzo, reti zincate, pannelli rigidi e posa professionale.
+      </p>
+      <a href="#preventivo" class="inline-block mt-4 px-6 py-3 rounded-full bg-green-600 text-white font-semibold shadow hover:bg-green-700 transition">
+        Richiedi un Preventivo
+      </a>
+    </header>
+
+    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow p-6 border-l-4 border-green-600">
+        <h2 class="text-xl font-bold mb-3">Recinzioni su muretto</h2>
+        <p>Soluzioni robuste con fondazione 40x40 cm e blocchi cementizi. Ideali per aree lineari e frontali.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 border-l-4 border-green-600">
+        <h2 class="text-xl font-bold mb-3">Rete a maglia sciolta H 200</h2>
+        <p>Filo zincato Ø 4 mm su pali zincati Ø 60 mm. Perfetta per aree irregolari e in pendenza.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 border-l-4 border-green-600">
+        <h2 class="text-xl font-bold mb-3">Pannelli rigidi plastificati</h2>
+        <p>Soluzione elegante e sicura per delimitare proprietà con estetica moderna e lunga durata.</p>
+      </div>
+    </section>
+
+    <section id="preventivo" class="w-full max-w-4xl bg-white rounded-2xl shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4 text-green-700">Preventivo Veloce</h2>
+      <p class="mb-4">Compila il modulo oppure contattaci direttamente su WhatsApp o via email per ricevere una quotazione entro 24h.</p>
+      <form action="https://formspree.io/f/mqkrjqbl" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Nome</label>
+          <input type="text" name="nome" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Telefono</label>
+          <input type="text" name="telefono" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Lunghezza Recinzione (m)</label>
+          <input type="number" name="lunghezza" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Tipo di recinzione</label>
+          <select name="tipo" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+            <option>Su muretto + pannelli rigidi</option>
+            <option>Rete a maglia sciolta</option>
+            <option>Altro / Da definire</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full mt-4 px-6 py-3 rounded-xl bg-green-600 text-white font-semibold hover:bg-green-700">
+          Invia richiesta
+        </button>
+      </form>
+      <div class="mt-6 text-sm text-gray-600">
+        <p>📧 Email: <a href="mailto:recinzione.italia@gmail.com" class="text-green-700 hover:underline">recinzione.italia@gmail.com</a></p>
+        <p>📱 WhatsApp: <a href="https://wa.me/393500217338" class="text-green-700 hover:underline">3500217338</a></p>
+      </div>
+    </section>
+
+    <footer class="w-full text-center text-gray-500 text-sm pt-6">
+      <p>© 2024 Natali Settimo Recinzione - Tel. 3500217338 - www.recinzione.info</p>
+    </footer>
+  </main>
+</body>
+</html>
