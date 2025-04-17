@@ -20,40 +20,29 @@
       </a>
     </header>
 
-    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl shadow p-6 border-l-4 border-green-600">
-        <h2 class="text-xl font-bold mb-3">Recinzioni su muretto</h2>
-        <p>Soluzioni robuste con fondazione 40x40 cm e blocchi cementizi. Ideali per aree lineari e frontali.</p>
-      </div>
-      <div class="bg-white rounded-2xl shadow p-6 border-l-4 border-green-600">
-        <h2 class="text-xl font-bold mb-3">Rete a maglia sciolta H 200</h2>
-        <p>Filo zincato Ø 4 mm su pali zincati Ø 60 mm. Perfetta per aree irregolari e in pendenza.</p>
-      </div>
-      <div class="bg-white rounded-2xl shadow p-6 border-l-4 border-green-600">
-        <h2 class="text-xl font-bold mb-3">Pannelli rigidi plastificati</h2>
-        <p>Soluzione elegante e sicura per delimitare proprietà con estetica moderna e lunga durata.</p>
-      </div>
-    </section>
-
     <section id="preventivo" class="w-full max-w-4xl bg-white rounded-2xl shadow p-6">
       <h2 class="text-2xl font-semibold mb-4 text-green-700">Preventivo Veloce</h2>
-      <p class="mb-4">Compila il modulo oppure contattaci direttamente su WhatsApp o via email per ricevere una quotazione entro 24h.</p>
-      <form class="space-y-4">
+      <p class="mb-4">Compila il modulo. Riceverai una risposta via email o WhatsApp entro 24h.</p>
+      <form action="https://formspree.io/f/mqkrjqbl" method="POST" class="space-y-4">
         <div>
           <label class="block text-sm font-medium">Nome</label>
-          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+          <input type="text" name="nome" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
         </div>
         <div>
           <label class="block text-sm font-medium">Telefono</label>
-          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+          <input type="text" name="telefono" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
         </div>
         <div>
           <label class="block text-sm font-medium">Lunghezza Recinzione (m)</label>
-          <input type="number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+          <input type="number" name="lunghezza" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
         </div>
         <div>
           <label class="block text-sm font-medium">Tipo di recinzione</label>
-          <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+          <select name="tipo" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
             <option>Su muretto + pannelli rigidi</option>
             <option>Rete a maglia sciolta</option>
             <option>Altro / Da definire</option>
